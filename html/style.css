@@ -1,0 +1,36 @@
+:root{  /*definições que podem ser utilizadas por todo o documento css*/
+    --branco-principal: #ffffff;/* cria uma variavel e coloca o valor da cor dentro dela*/
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+
+}
+body{
+    background-color: var(--cor-de-fundo);/*define a cor do fundo da pagina inteira*/
+    color: var(--branco-principal);/*define a cor do texto da pagina inteira*/
+}
+* {
+    margin:0;
+    padding: 0;
+}
+.principal{
+    background-image: url(img/Background.png); /* define a 1ª imagem de fundo*/
+    background-repeat: no-repeat; /* faz com que a imagem de fundo não seja repetida*/
+    background-size: contain; /*define que a imagem de fundo esta contida dentro do container*/ 
+}
+.container{
+    height: 100vh;/*define que a imagem de fundo ocupara todo o container*/
+    display: grid;/*define o display do container no formato de grade*/
+    grid-template-columns: 50% 50%; /*altera o estilo do grid de linhas para colunas e define o tamanho das colunas*/
+}
+.container__botao{/*configurações de estilo do botão primario */
+    background-color: var(--botao-azul); /*define a cor de fundo do botao*/
+    border-radius: 5px; /*para fazer com que as bordas do botao fiquem arredondadas*/
+    padding: 1em; /*define o padding para o tamanho da fonte*/
+    color: var(--branco-principal);
+    display: block;/*para definir o estilo de display em bloco*/
+}
+.botao__secundario{/*configurações de estilo do botão secundario*/
+    background-color: transparent;/*define que a cor do fundo do botao sera transparente*/
+    border: 2px solide var(--branco-principal);/*define o tamanho, o estiloe a cor da borda do botao*/
+}
