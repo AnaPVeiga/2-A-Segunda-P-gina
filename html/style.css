@@ -81,3 +81,23 @@ body{
 .container__descricao{
     padding: 2em;
 }
+
+/*--------------------------------------------------------------------------------------------*/
+.dispositivos__lista{
+    display: flex;/*coloca os itens de dentro e uma lista um ao lado do outro*/
+    justify-content: center;/*centraliza os itens de dentro de uma lista*/
+    list-style-type: none; /*retira o estilo aplicado a uma lista*/
+    margin: 5em 0;/*define a margem superior e inferior como 5em e as margens da esquerda e direita como 0*/
+}
+.dispositivos{
+    text-align: center;/*centraliza todos os itens de uma linha*/
+}
+.dispositivos__titulo{
+    font-size:48px;
+    color: var(--branco-principal);
+
+}
+.lista__item{
+    font-size: 32px;
+    color: var(--branco-principal);
+}
