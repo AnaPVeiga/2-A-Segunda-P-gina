@@ -4,6 +4,7 @@
     --botao-azul: #167bf7;
     --cor-de-fundo: #00030c;
     --fonte-principal: 'Inter';/*cria uma variavel e coloca o valor da fonte dentro dela*/
+    --botao-azul-efeito:#076eec;
 
 }
 body{
@@ -83,7 +84,7 @@ body{
 }
 
 /*--------------------------------------------------------------------------------------------*/
-.dispositivos__lista{
+.dispositivos__lista{/*configurações de estilos dos icones */
     display: flex;/*coloca os itens de dentro e uma lista um ao lado do outro*/
     justify-content: center;/*centraliza os itens de dentro de uma lista*/
     list-style-type: none; /*retira o estilo aplicado a uma lista*/
@@ -101,3 +102,39 @@ body{
     font-size: 32px;
     color: var(--branco-principal);
 }
+/*---------------------------------------------------------------------------------------------------*/
+.rodape__lista{ /*configurações da lista no rodape da pagina*/
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 3em;
+}
+.lista__link a{/*configurações dos links dentro da lista no rodape*/
+    margin: 1em 3em;
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+.rodape{
+    text-align: center;
+    margin: 0 3em;
+}
+.rodape__logo{
+    margin-bottom: 2em;
+}
+.rodape__texto{
+    margin-bottom: 1em;
+}
+
+
+/*Efeitos Extras------------------------------------------------------------------------*/
+.lista__link a:hover{/*destaca os links no rodape quando o mouse passar por cima deles*/
+    color: var(--botao-azul);
+}
+.lista__link a:active{/*troca a cor dos links no rodape para roxo enquanto forem clicados*/
+    color: purple;
+}
+.container__botao:hover{/*altera a cor dos botoes e destaca o texto deles quando o mouse estiver em cima do botao*/
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
