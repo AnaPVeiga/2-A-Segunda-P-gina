@@ -3,14 +3,14 @@
     --cinza-secundario: #c0c0c0;
     --botao-azul: #167bf7;
     --cor-de-fundo: #00030c;
-    --fonte-principal: 'Inter';
+    --fonte-principal: 'Inter';/*cria uma variavel e coloca o valor da fonte dentro dela*/
 
 }
 body{
     background-color: var(--cor-de-fundo);/*define a cor do fundo da pagina inteira*/
     color: var(--branco-principal);/*define a cor do texto da pagina inteira*/
-    font-family: var(--fonte-principal);
-    font-weight: 400;
+    font-family: var(--fonte-principal);/*define o estilo da fonte de texto da pagina*/
+    font-weight: 400;/* define o sub-estilo da fonte*/
 }
 * {
     margin:0;
@@ -20,8 +20,8 @@ body{
     background-image: url(img/Background.png); /* define a 1ª imagem de fundo*/
     background-repeat: no-repeat; /* faz com que a imagem de fundo não seja repetida*/
     background-size: contain; /*define que a imagem de fundo esta contida dentro do container*/ 
-    align-items: center;
-    text-align: center;
+    align-items: center;/*alinha todos os itens de um conteiner ao centro*/
+    text-align: center;/*alinha todos os textos ao centro*/
 }
 .container{
     height: 100vh;/*define que a imagem de fundo ocupara todo o container*/
@@ -32,39 +32,40 @@ body{
     background-color: var(--botao-azul); /*define a cor de fundo do botao*/
     border-radius: 5px; /*para fazer com que as bordas do botao fiquem arredondadas*/
     padding: 1em; /*define o padding para o tamanho da fonte*/
-    color: var(--branco-principal);
+    color: var(--branco-principal);/*define a cor do texto*/
     display: block;/*para definir o estilo de display em bloco*/
-    text-decoration: none;
-    margin-bottom: 1em;
+    text-decoration: none;/*define que todas as decorações do texto sejam retiradas*/
+    margin-bottom: 1em;/*cria uma margem na parte inferior do botao*/
 }
 .botao_secundario{/*configurações de estilo do botão secundario*/
     background-color: transparent;/*define que a cor do fundo do botao sera transparente*/
     border: 2px solid var(--branco-principal);/*define o tamanho, o estiloe a cor da borda do botao*/
 }
-.container__aviso{
-    font-size: 12px;
-    color: var(--cinza-secundario);
+.container__aviso{/*configurações de estilo do aviso que esta embaixo do botao secundario*/
+    font-size: 12px;/*define o tamanho do texto*/
+    color: var(--cinza-secundario);/*define a cor do texto*/
 }
-.container__titulo{
+.container__titulo{/*configurações de estilo do titulo*/
     font-size: 28px;
     font-weight: 700;
 }
-.container__imagem{
-    margin: 1em 0 2em 0;
+.container__imagem{/*configurações de estilo da imagem*/
+    margin: 1em 0 2em 0;/*define as configurações de margem 1ºvalor:superior / 2ºvalor: a direita / 3ºValor: inferior/ 4ºValor: a esquerda*/
 }
-.container__caixa{
+.container__caixa{/*configurações de estilo da div que emgloba a primeira parte da pagina*/
     margin: 0   6em;
     
 }
-.secundario__imagem{
-    width: 80%;
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.secundario__imagem{/*configurações da segunda imagem*/
+    width: 80%;/*define o tamanho da imagem*/
 
 }
-.secundario{
+.secundario{/*configurações da segunda seção*/
     align-items: center;
     margin: 0 10em;
 }
-.descricao__titulo{
+.descricao__titulo{/*configurações da segundo titulo*/
     font-weight: 700;
     font-size: 48px;
     color: var(--branco-principal);
@@ -72,4 +73,11 @@ body{
 }
 .descricao__texto{
     color: var(--cinza-secundario);
+}
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+.container__descricao{
+    padding: 2em;
 }
